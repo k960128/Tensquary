@@ -6,7 +6,7 @@
 	<groupId>com.tensquare</groupId>
 	<artifactId>Tensquare</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+	<packaging>pom</packaging>
 
 	<name>Tensquare</name>
 	<description>十次方项目</description>
@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.1.RELEASE</version>
-		<relativePath/>
+		<relativePath />
 	</parent>
 
 	<properties>
@@ -35,15 +35,28 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-    <modules>
-    	<module>tensquare_common</module>
-    	<module>tensquare_base</module>
-    	<module>tensquare_recruit</module>
-    	<module>tensquare_qa</module>
-    	<module>tensquare_article</module>
-    	<module>tensquare_spit</module>
-    	<module>tensquare_search</module>
-    	<module>tensquare_rabbit</module>
-    	<module>tensquare_user</module>
-    </modules>
+	<modules>
+		<module>tensquare_common</module>
+		<module>tensquare_base</module>
+		<module>tensquare_recruit</module>
+		<module>tensquare_qa</module>
+		<module>tensquare_article</module>
+		<module>tensquare_spit</module>
+		<module>tensquare_search</module>
+		<module>tensquare_rabbit</module>
+		<module>tensquare_user</module>
+		<module>tensquare_eureka</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Greenwich.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
