@@ -1,0 +1,21 @@
+server: 
+  port: 9008
+spring: 
+  application:  
+    name: tensquare-user #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.132.168.237:3306/tensquare_user?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+  redis: 
+   host: 101.132.168.237
+   spring: 
+  rabbitmq: 
+   host: 101.132.168.237
+   prot: 5672
+   username: lxk
+   password: 123456

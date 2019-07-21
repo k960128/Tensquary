@@ -1,0 +1,8 @@
+server: 
+ port: 8001
+spring: 
+ rabbitmq: 
+  host: 101.132.168.237
+  prot: 5672
+  username: lxk
+  password: 123456
